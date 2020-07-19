@@ -16,6 +16,7 @@
     <modules>
         <module>spark-job-common</module>
         <module>spark-job-impl</module>
+        <module>spark-job-launcher</module>
     </modules>
     <pluginRepositories>
         <pluginRepository>
