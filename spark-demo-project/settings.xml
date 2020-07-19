@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <profiles>
+        <profile>
+            <repositories>
+                <repository>
+                    <id>maven.central</id>
+                    <name>Maven2 Central Repository</name>
+                    <url>https://mvnrepository.com/artifact/</url>
+                </repository>
+                <repository>
+                    <id>scala-tools.org</id>
+                    <name>Scala-Tools Maven2 Repository</name>
+                    <url>http://scala-tools.org/repo-releases</url>
+                </repository>
+            </repositories>
+            <id>mysettings</id>
+            <proxies></proxies>
+        </profile>
+    </profiles>
+
+    <activeProfiles>
+        <activeProfile>mysettings</activeProfile>
+    </activeProfiles>
+
+</settings>
