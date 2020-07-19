@@ -7,7 +7,7 @@ object SparkJobLauncher {
     import org.apache.spark.launcher.SparkLauncher
     import java.util.concurrent.CountDownLatch
     val countDownLatch = new CountDownLatch(1)
-    val spark = new SparkLauncher().setAppResource("/Users/jmpurush/mywork/my-learnings/apache-spark-examples/spark-demo-project/spark-job-impl/target/spark-job-impl-LATEST-SNAPSHOT.jar")
+    val spark = new SparkLauncher().setAppResource("../spark-job-impl/target/spark-job-impl-LATEST-SNAPSHOT.jar")
       .setMainClass("com.jobinesh.spark.job.impl.WordCountJob")
       .setMaster("local")
       .addSparkArg("--packages", "com.typesafe:config:1.4.0,com.jobinesh.example:spark-job-common:LATEST-SNAPSHOT,com.jobinesh.example:spark-job-impl:LATEST-SNAPSHOT")
